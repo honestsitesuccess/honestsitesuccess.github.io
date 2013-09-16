@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1em;
+}
+ol, ul {
+
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+	margin: auto;
+}
+body {
+	background-color: white;
+	font-family: Lucida Grande, Arial, sans-serif;
+	font-size:12px;
+	min-width:840px;
+	margin:auto;
+	text-align: center;
+}
+
+#menu {
+	text-align: right;
+	padding-left: 8px;
+	margin: 28px 70px 20px 0;
+	height: 5px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li {
+	list-style-type: none;
+	display: inline;
+	padding: 0 8px 0;
+	font-size: 12px;
+	font-family: Lucida Grande, Arial, sans-serif;
+}
+
+#menu ul li a {
+	color: #336699;
+	text-decoration: none;
+	margin: 0;
+}
+
+#menu ul li a:hover{
+	color: #6699cc;
+}
+
+#menu ul li.date {
+	float: left;
+	margin-left: 40px;
+	color: #999999;
+}
+
+#menu ul li.list {
+	display: inline;
+	margin-right: 40px;
+}
+
+#menu ul li.signin a {
+	color: #6699cc;
+}
+
+#menu ul li.signin a:hover{
+	color: #336699;
+}
+
+#box {
+	height: 450px;
+	width: 840px;
+	margin: auto;
+}
+
+#logo{
+	height: 39px;
+	width: 100%;
+	position: relative;
+	margin: 44px auto 0;
+	padding-bottom: 24px;
+}
+
+#headline {
+	position: relative;
+	height: 185px;
+	width: 100%;
+}
+
+#headline h1{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 58px;
+	font-weight: 500;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	letter-spacing: -2px;
+	color: #232323;
+}
+
+#headline h5{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 18px;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	color: #232323;
+}
+
+#products {
+	height: 180px;
+	width: 100%;
+	position: relative;
+	left: 13%;
+}
+
+#products h3 {
+	font-size: 21px;
+	line-height: 1.8em;
+	margin: 0 auto 0;
+	color: #6699cc;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-weight: bold;
+}
+
+#products h3 a {
+	color: #369;
+}
+
+#products h3 sup {
+	font-size: 10px;
+	color: #999;
+}
+
+#products h5 {
+	font-size: 14px;
+	line-height: 2.1em;
+	margin: 0 auto 0;
+	color: #cc0000;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	font-weight: bold;
+}
+
+#products p {
+	font-size: 15px;
+	line-height: 1.2em;
+}
+
+#products .bc {
+	position: relative;
+	width: 180px;
+	margin: 0px auto 0px;
+	float: left;
+	border:  1px solid #e8e8e8;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 
+	0 5px #efefef;
+	-moz-box-shadow: 0 0 5px #efefef;
+	box-shadow: 0 0 5px #efefef;
+	padding: 20px 0px 10px;
+	text-decoration: none;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	background: -webkit-linear-gradient(#ffffff, #efefef);
+	background: -moz-linear-gradient(#fff, #efefef); 
+}
+	
+#products .bc .arrow-left{
+	position: absolute;
+	top: -20px;
+	left: 150px;
+}
+
+#products .hr{
+	position: relative;
+	width: 160px;
+	margin: 0px auto 0px;
+	float: left;
+	left: 4%;
+	border:  1px solid #e8e8e8;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 
+	0 5px #efefef;
+	-moz-box-shadow: 0 0 5px #efefef;
+	box-shadow: 0 0 5px #efefef;
+	padding: 20px 10px 10px;
+	text-decoration: none;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	background: -webkit-linear-gradient(#ffffff, #efefef);
+	background: -moz-linear-gradient(#fff, #efefef); 
+}
+
+#products .hr .arrow-left{
+	position: absolute;
+	top: 20px;
+	left: 150px;
+}
+
+#products .cf {
+	position: relative;
+	left: 8%;
+	width: 160px;
+	float: left;
+	margin: 0px auto 0px;
+	border:  1px solid #e8e8e8;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius: 5px;
+	-webkit-box-shadow: 0 0 5px #efefef;
+	-moz-box-shadow: 0 0 5px #efefef;
+	box-shadow: 0 0 5px #efefef;
+	padding: 20px 10px 10px;
+	text-decoration: none;
+	font-family: 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+	background: -webkit-linear-gradient(#ffffff, #efefef);
+	background: -moz-linear-gradient(#fff, #efefef); 
+}
+
+#products .cf .arrow-right{
+	position: absolute;
+	top: -20px;
+	right: 150px;
+}
+
+#threestars {
+	height: 24px;
+	position: relative;
+	width: 100%;
+	clear: both;
+	top: 40px;
+}
