@@ -1,5 +1,5 @@
 jQuery(document).ready(function() {
-	$('.bc').on('mouseenter',function(); {
+	$('.bc').on('mouseenter',function() {
 		$('#basecamp').show();
 		$('#headline').hide();
 		$('.arrow-left').show();
