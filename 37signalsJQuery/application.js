@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(document).ready(function() {
 	$('.bc').on('mouseenter',function(); {
 		$('#basecamp').show();
 		$('#headline').hide();
