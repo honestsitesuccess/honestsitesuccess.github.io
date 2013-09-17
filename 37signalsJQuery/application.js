@@ -11,11 +11,11 @@ jQuery(document).ready(function() {
 	$('.hr').on('mouseenter', function() {
 		$('#highrise').show();
 		$('#headline').hide();
-		$('.arrow-left').show();
+		$('.arrow-left2').show();
 	}).on('mouseleave', function() {
 		$('#headline').show();
 		$('#highrise').hide();
-		$('.arrow-left').hide();
+		$('.arrow-left2').hide();
 	});
 	$('.cf').on('mouseenter', function() {
 		$('#campfire').show();

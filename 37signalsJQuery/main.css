@@ -146,6 +146,108 @@ body {
 	color: #232323;
 }
 
+#basecamp {
+	position: relative;
+	height: 185px;
+	width: 100%;
+}
+
+#basecamp h1{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 48px;
+	font-weight: 500;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	letter-spacing: -2px;
+	color: #232323;
+}
+
+#basecamp h1 a {
+	color: #369;
+}
+
+#basecamp h5{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 18px;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	color: #232323;
+}
+
+#highrise {
+	position: relative;
+	height: 185px;
+	width: 100%;
+}
+
+#highrise h1{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 48px;
+	font-weight: 500;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	letter-spacing: -2px;
+	color: #232323;
+}
+
+#highrise h1 a {
+	color: #369;
+}
+
+#highrise h5{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 18px;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	color: #232323;
+}
+
+#campfire {
+	position: relative;
+	height: 185px;
+	width: 100%;
+}
+
+#campfire h1{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 48px;
+	font-weight: 500;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	letter-spacing: -2px;
+	color: #232323;
+}
+
+#campfire h1 a {
+	color: #369;
+}
+
+#campfire h5{
+	position: relative;
+	font-family: "CrimsonRoman","Times New Roman", Georgia, serif;
+	font-size: 18px;
+	font-style: normal;
+	clear: both;
+	line-height: 1.0em;
+	margin-bottom: 20px;
+	color: #232323;
+}
+
 #products {
 	height: 180px;
 	width: 100%;
@@ -204,11 +306,11 @@ body {
 	background: -webkit-linear-gradient(#ffffff, #efefef);
 	background: -moz-linear-gradient(#fff, #efefef); 
 }
-	
+
 #products .bc .arrow-left{
 	position: absolute;
-	top: -20px;
-	left: 150px;
+	top: -36px;
+	left: 140px;
 }
 
 #products .hr{
@@ -216,7 +318,7 @@ body {
 	width: 160px;
 	margin: 0px auto 0px;
 	float: left;
-	left: 4%;
+	left: 4.5%;
 	border:  1px solid #e8e8e8;
 	border-radius: 5px;
 	-webkit-border-radius:5px;
@@ -232,15 +334,15 @@ body {
 	background: -moz-linear-gradient(#fff, #efefef); 
 }
 
-#products .hr .arrow-left{
+#products .hr .arrow-left2{
 	position: absolute;
-	top: 20px;
-	left: 150px;
+	top: -36px;
+	left: 140px;
 }
 
 #products .cf {
 	position: relative;
-	left: 8%;
+	left: 9%;
 	width: 160px;
 	float: left;
 	margin: 0px auto 0px;
@@ -260,8 +362,8 @@ body {
 
 #products .cf .arrow-right{
 	position: absolute;
-	top: -20px;
-	right: 150px;
+	top: -36px;
+	right: 140px;
 }
 
 #threestars {
