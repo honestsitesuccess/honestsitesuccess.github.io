@@ -50,7 +50,7 @@ function evaluateEntry(inputValue) { //making sure everything is logical and nob
 	guessInput.val('');
 	guessInput.focus();
 
-	if(isNaN(inputValue)) || inputValue = '') {
+	if(isNaN(inputValue) || inputValue ==''){
 		writeReply("Error: Please enter a number between 0 and 100.")
 	} else {
 
@@ -104,14 +104,6 @@ previousDistance = 0;
 
 guessInput.focus(); //to get the focus on the box after the reset
 }
-
-
-function hideDivs() {
-// Hide divs that shows messages
-		replyText.hide();
-
-}
-
 
 
 function writeReply(text) {
