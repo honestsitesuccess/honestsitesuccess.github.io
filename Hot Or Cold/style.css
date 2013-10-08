@@ -1,0 +1,134 @@
+/* For Hot or Cold by Mike Harmanos, HonestSiteSuccess.com, 2013.
+	http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+html, body{
+	font-family: "Keep Calm", "Lucida Grande", Lucida, Verdana, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+#full-screen-background-image {
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 1024px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -100;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto 0 auto;
+}
+#content {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 5px;
+	min-height: 420px;
+	margin: 50px 0px 0px 0px;
+}
+h1 {
+    color: #222222;
+    font-size: 3em;
+    text-align: center;
+}
+h3 {
+    color: #222222;
+    font-size: 1.2em;
+    text-align: center;
+}
+h4 {
+    margin: 15px 0px 10px 0px;
+    color: #222222;
+    font-size: 1.2em;
+    text-align: center;
+}
+h4.error {
+    color: #d40000;
+}
+h4.correct {
+    color: #338000;
+}
+
+#guess {
+    border: 2px solid #333333;
+    border-radius: 5px 5px 5px 5px;
+    color: navy;
+    font-size: 2em;
+    height: 30px;
+    margin: 10px 5px 20px 323px;
+    padding: 5px;
+    border: 2px solid #333333;
+    height: 30px;
+    width: 110px;
+    display: inline-block;
+	float: left;
+	text-align: center;
+}
+
+.button {
+    border: 2px solid #333333;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    height: 30px;
+    margin: 10px 5px 20px 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    display: inline-block;
+}
+.button:hover{
+    border: 2px solid #ffffff;
+    transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+}
+.guesssubmit{
+    background: #002eb7;
+    margin: 10px 5px 20px -309px;
+}
+.cheatsubmit{
+    background: #d6a978;
+}
+.resetsubmit{
+    background: #a82520;
+}
+
+#mainelements {
+    float: left;
+    margin: 0px auto;
+    width: 910px;
+    text-align: center;
+    min-height: 100px;
+}
+#secondaryelements {
+    float: left;
+    margin: 0px auto;
+    width: 910px;
+    text-align: center;
+    min-height: 100px;
+}

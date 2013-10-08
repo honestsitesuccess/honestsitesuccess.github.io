@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Hot Or Cold? by Mike</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+<img alt="full screen background image" src="bg.png" id="full-screen-background-image" /> 
+<div id="container">
+	<div id="content">
+	<h1>Hot or Cold?</h1>
+	<h3><i>Instructions</i>: The computer has picked a random number between 0 and 100. 
+		Make a guess.  If you're getting closer, the computer will say "Getting hotter..."  <br />And if you're getting farther away, the computer will say "Getting colder..."  <br />Keep guessing until you get it right.<br />
+		<i>Good luck!</i></h3>
+	
+			<div id="mainelements">
+	
+			<input id="guess" name="guess" type="text" maxlength="3" size="3">
+			<a href="#" class="guesssubmit button"> Submit </a>
+		
+			</div> <!-- end mainelements -->	
+			<div id="secondaryelements">
+				<a href="#" class="cheatsubmit button"> Give up... </a>
+		
+				<a href="#" class="resetsubmit button"> Restart </a>
+		
+					<div id="reply"></div>
+	
+			</div> <!-- end secondaryelements -->
+	
+	</div> <!-- end content -->
+	
+</div> <!-- end container -->
+</body>
+</html>
