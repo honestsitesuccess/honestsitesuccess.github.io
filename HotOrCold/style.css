@@ -104,8 +104,7 @@ h4.correct {
 }
 .button:hover{
     border: 2px solid #ffffff;
-    transition: all 0.25s;
-	-webkit-transition: all 0.25s;
+
 }
 .guesssubmit{
     background: #002eb7;
@@ -118,14 +117,14 @@ h4.correct {
     background: #a82520;
 }
 
-#mainelements {
+#main {
     float: left;
     margin: 0px auto;
     width: 910px;
     text-align: center;
     min-height: 100px;
 }
-#secondaryelements {
+#second {
     float: left;
     margin: 0px auto;
     width: 910px;
