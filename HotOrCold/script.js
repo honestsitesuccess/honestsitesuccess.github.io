@@ -1,7 +1,7 @@
 // Hot or Cold Game by Mike Harmanos, HonestSiteSuccess.com, 2013
 
 $(document).ready(function() {
-	var randomNumber = randomFromInterval(0,100);
+	var randomNumber = randomFromInterval(1,99);
 	var previousDistance = 0;
 	var guessInput = $('#guess');
 	var guessButton = $('.guesssubmit');
@@ -32,7 +32,7 @@ resetButton.click(function() {
 // Intervals
 
 function randomFromInterval(from,to) {
-	return Math.floor (Math.random()*(to-from+1)+from);
+	return Math.floor (Math.random()*(to+1)+from);
 }
 
 function numbersDistanceModule(x,y) {
@@ -51,7 +51,10 @@ function evaluateEntry(inputValue) { //making sure everything is logical and nob
 	guessInput.focus();
 
 	if(isNaN(inputValue) || inputValue ==''){
-		writeReply("Error: Please enter a number between 0 and 100.")
+		writeReply("Error: Please enter a number between 1 and 99.")
+	}
+	if((inputValue < 1) || inputValue >= 100){
+		writeReply("Error: Please enter a number between 1 and 99.")
 	} else {
 
 	var distance = numbersDistanceModule(inputValue, randomNumber);
@@ -93,7 +96,7 @@ function evaluateEntry(inputValue) { //making sure everything is logical and nob
 function resetGame() {
 // Restart the game
 
-randomNumber = randomFromInterval(0,100); //Generates a new random number.
+randomNumber = randomFromInterval(1,99); //Generates a new random number.
 
 writeReply(''); 
 writeErrorReply(''); 
