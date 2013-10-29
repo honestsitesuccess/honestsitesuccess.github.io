@@ -1,28 +1,51 @@
 // Shopping List for Mike Harmanos, Honest Site Success.com, 2013
 
 $(document).ready(function() {
-	form action="something.pl" onsubmit="return script()"
+	form action="something.pl" onsubmit="return checkscript()"
 
-function checkscript() {
-	if (some value is/is not something) {
-		// something is wrong
-		alert('alert user of problem');
+function checkscript () {
+	if (item = " ") {
+		// no item listed
+		alert ('Please insert an item.');
 		return false;
-	}
-	else if (another value is/is not something) {
-		// something else is wrong
-		alert('alert user of problem');
+	} else if (date = " ") {
+		// no date listed
+		alert ('Please insert a date.');
 		return false;
-	}
-
-	// If the script makes it to here, everything is OK,
-	// so you can submit the form
-
+	} 
 	return true;
 }
 
-if (document.forms[0].checkbox.checked) {
-	user_input = document.forms[0].checkbox.name
+var item = {
+	check: "check",
+	item: "item",
+	store: "option",
+	date: "date"
+};
+
+var items = [item];
+
+function printitem(Item) {
+	console.log(Item.check + " " + Item.item + " " + Item.option + " " + Item.date);
 }
+
+function add(check,item,option,date) {
+	items[items.length] = {
+		check: check,
+		item: item,
+		option: option,
+		date: date,
+	};
+}
+
+onclick(onsubmit);
+add();
+
+if (document.forms[0].check.checked) {
+	var ele = document.getElementById("item");
+	ele.style.setProperty("text-decoration", "line-through");
+} 
+
+
 
 }
