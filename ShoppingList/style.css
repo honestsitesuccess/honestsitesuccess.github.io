@@ -28,6 +28,10 @@ html, body{
 	margin: 0px;
 	padding: 0px;
 	background-color: #d6e8ff;
+	min-width: 960px;
+}
+
+.container {
 	width: 960px;
 }
 
@@ -49,9 +53,9 @@ p {
 }
 
 table {
-	width: 900px;
-	left: 150px;
-	position: fixed;
+	width: 650px;
+	left: 300px;
+	position: absolute;
 }
 
 td {

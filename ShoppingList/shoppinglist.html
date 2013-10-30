@@ -10,23 +10,24 @@
 </head>
 
 <body>
+<div class="container">
 <h1>Shopping List for the P&amp;P Family</h1>
-<p>Note: Input the item, then use the dropdown menu to specify a store.</p>
-<p>	Leaving the store blank means "No Preference"</p>
+<p>Note: Input the item, then use the dropdown menu to specify a store, then enter the date.</p>
 <p>	Be as specific as possible in getting something</p>
 <p>	i.e. Gallon of Whole Milk, Infusium 23 with the #3 printed on bottle</p>
 <!-- notes are for my wife's edification-->
 <br />
 <table>
 	<tr>
-	<td width="23%"><h2>Item</h2></td>
-	<td width="9%"><h2>Store</h2></td>
-	<td width="17%"><h2>Date</h2></td>
+	<td><h2>Item</h2></td>
+	<td><h2>Store</h2></td>
+	<td><h2>Date</h2></td>
+</tr>
 </table>
 <br \>
-<form name="shopping" action="something.pl" onsubmit="return checkscript()" id="storelist">
-<input type=checkbox name=check>
-<input text=text size=60 name=item id=item>
+<form name="shopping" action="something.pl" id="storelist">
+<input type="checkbox" name="check">
+<input text="text" size="40" name="item" id="item"> 
 <select>
   <option value="Albertson's">Albertson's</option>
   <option value="Farmer's Market">Farmer's Market</option>
@@ -36,9 +37,12 @@
   <option value="Trader Joe's">Trader Joe's</option>
   <option value="Vons">Vons</option>
 </select> 
-<input type=date name=date>
+<input type="date" name="date" id="date">
 <br \>
 <input type="submit" value="Submit">
 </form>
+<ul id = "list">
+</ul>
+</div> <!-- Container-->
 </body>
 </html>
