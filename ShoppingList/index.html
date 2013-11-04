@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Shopping List by Mike</title>
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="mobile.css" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="./script.js"></script>
+</head>
+
+<body>
+<div class="container">
+<h1>Shopping List for the P&amp;P Family</h1>
+<p>Note: Input the item, then use the dropdown menu to specify a store, then enter the date.</p>
+<p>	Be as specific as possible in getting something</p>
+<p>	i.e. Gallon of Whole Milk, Infusium 23 with the #3 printed on bottle</p>
+<!-- notes are for my wife's edification-->
+<br />
+<table>
+	<tr>
+	<td><h2>Item</h2></td>
+  <td></td>
+	<td><h2>Store</h2></td>
+	<td><h2>Date</h2></td>
+</tr>
+</table>
+<br \>
+<form name="shopping" id="storelist">
+<input text="text" size="40" name="item" id="item"> 
+<select id="store">
+  <option value="Albertson's">Albertson's</option>
+  <option value="Farmer's Market">Farmer's Market</option>
+  <option value="Ralph's">Ralph's</option>
+  <option value="Sprouts">Sprouts</option>
+  <option value="Stater Bros.">Stater Bros.</option>
+  <option value="Trader Joe's">Trader Joe's</option>
+  <option value="Vons">Vons</option>
+  <option value="Other">Other</option>
+</select> 
+<input type="date" name="date" id="date">
+<br \>
+<input type="submit" value="Submit">
+</form>
+<div id="items">
+      <!-- 
+      <p class="added">This is added item</p>
+      <p class="selected">This is selected item and some more text to see how th te;arisd;la
+        <span class="delete-item">Delete</span>
+      </p> 
+    -->
+    </div>
+</div> <!-- Container-->
+</body>
+</html>
