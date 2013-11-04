@@ -27,17 +27,20 @@ html, body{
 	font-family: "Highway Gothic", "Lucida Grande", Lucida, Verdana, sans-serif;
 	margin: 0px;
 	padding: 0px;
-	background-color: #d6e8ff;
+	background-color: #81d81d;
 	min-width: 960px;
 }
 
 .container {
-	width: 960px;
+	text-align: center;
+	width: 760px;
+	margin: 0 auto 0 auto;
+	background-color: #f2f2f2;
 }
 
 h1 {
 	color: #a82520;
-	font-size:24px;
+	font-size:44px;
 	text-align: center;
 	line-height: 40px;
 }
@@ -46,6 +49,7 @@ h2 {
 	color: #a82520;
 	font-size: 18px;
 	text-align: left;
+	font-family: Courier, serif;
 }
 
 p {
@@ -53,9 +57,9 @@ p {
 }
 
 table {
-	width: 650px;
-	left: 300px;
-	position: absolute;
+	width: 600px;
+	left: 200px;
+	position: relative;
 }
 
 td {
@@ -66,3 +70,6 @@ form {
 	text-align: center;
 	font-size: 18px;
 }
+
+
+
