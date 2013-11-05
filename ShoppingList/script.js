@@ -23,6 +23,17 @@ function checkscript (e) {
 }
 
 function nextStep(item, date, store){
-    alert('Thanks! You want: '+item+" on "+date+' from ' +store)
-};
+    alert('Thanks! You want: '+item+" on "+date+' from ' +store);
+	addItem();
+}
+
 //create the list
+function addItem () {
+	userEntry = document.storelist.item.value; + document.storelist.store.value + document.storelist.date.value;
+	paragraph = document.createElement("p");
+	paragraph.className = "added";
+	newItem = userEntry.appendChild(paragraph);
+	newitem.innerHTML = userEntry;
+	$('#items p:last-child').append("<span class='delete-item' style='display:none;'>Delete</span>");
+
+}
