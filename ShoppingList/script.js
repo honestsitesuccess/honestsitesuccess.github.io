@@ -18,7 +18,7 @@ function checkscript (e) {
 		return false;
 	}
     //Execute whatever code comes next
-    nextStep(item,date,store)
+    nextStep(item,date,store);
 	return false;
 }
 
