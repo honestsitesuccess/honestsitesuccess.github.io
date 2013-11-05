@@ -25,7 +25,7 @@ function checkscript (e) {
 }
 
 function nextStep(item, date, store) {
-    console.log("Thanks! You want: "+item+" on "+date+" from " +store);
+    alert("Thanks! You want: "+item+" on "+date+" from " +store);
 	addItem();
 }
 
