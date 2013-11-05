@@ -19,7 +19,7 @@ function checkscript (e) {
 	}
     //Execute whatever code comes next
     nextStep(item,date,store)
-	return true;
+	return false;
 }
 
 function nextStep(item, date, store){
