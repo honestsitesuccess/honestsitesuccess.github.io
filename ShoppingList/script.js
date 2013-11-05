@@ -10,11 +10,11 @@ function checkscript (e) {
     var store = document.getElementById('store').value;
     if (item == "") {
 		// no item listed
-		alert ('Please insert an item.');
+		alert('Please insert an item.');
 		return false;
 	} else if (date == "") {
 		// no date listed
-		alert ('Please insert a date.');
+		alert('Please insert a date.');
 		return false;
 	}
     //Execute whatever code comes next
@@ -23,6 +23,6 @@ function checkscript (e) {
 }
 
 function nextStep(item, date, store){
-    alert ('Thanks! you want: '+item+" on "+date+' from ' +store)
+    alert('Thanks! You want: '+item+" on "+date+' from ' +store)
 };
 //create the list
