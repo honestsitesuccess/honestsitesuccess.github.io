@@ -24,7 +24,7 @@ time, mark, audio, video {
 }
 
 html, body{
-	font-family: "Highway Gothic", "Lucida Grande", Lucida, Verdana, sans-serif;
+	font-family: Courier, serif;
 	margin: 0px;
 	padding: 0px;
 	background-color: yellow;
@@ -51,7 +51,6 @@ h2 {
 	color: blue
 	font-size: 18px;
 	text-align: left;
-	font-family: Courier, serif;
 }
 
 p {
