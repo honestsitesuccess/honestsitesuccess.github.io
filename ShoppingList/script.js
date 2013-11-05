@@ -20,8 +20,8 @@ function checkscript (e) {
 		return false;
 	}
     //Execute whatever code comes next
-    nextStep(item,date,store);
-	return false;
+    nextStep(item, date, store);
+	return true;
 }
 
 function nextStep(item, date, store) {
