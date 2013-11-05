@@ -21,7 +21,7 @@ function checkscript (e) {
 	}
     //Execute whatever code comes next
     nextStep(item, date, store);
-	return true;
+	return false;
 }
 
 function nextStep(item, date, store) {
@@ -31,13 +31,14 @@ function nextStep(item, date, store) {
 
 //create the list
 function addItem () {
-	userEntry = document.storelist.item.value; + document.storelist.store.value + document.storelist.date.value;
+	var item = document.getElementById('item').value;
+    var date = document.getElementById('date').value;
+    var store = document.getElementById('store').value;
+	userEntry = item + " " + store + " " + date;
 	paragraph = document.createElement("p");
 	paragraph.className = "added";
-	newItem = userEntry.appendChild(paragraph);
-	newitem.innerHTML = userEntry;
-	$('#items p:last-child').append("<span class='delete-item' style='display:none;'>Delete</span>");
-
+	paragraph.innerHTML = userEntry;
+	$('#items').prepend(paragraph);
 }
 
 });
