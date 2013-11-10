@@ -27,7 +27,8 @@ html, body{
 	font-family: Courier, serif;
 	margin: 0px;
 	padding: 0px;
-	background-color: yellow;
+	background-image:url('legalpaper.png') ;
+	background-repeat: repeat-y;
 	min-width: 960px;
 }
 
@@ -54,7 +55,7 @@ h2 {
 }
 
 p {
-	text-align: center;
+	text-align: left;
 }
 
 table {

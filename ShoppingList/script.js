@@ -12,11 +12,11 @@ function checkscript (e) {
     var store = document.getElementById('store').value;
     if (item == "") {
 		// no item listed
-		console.log("Please insert an item.");
+		alert("Please insert an item.");
 		return false;
 	} else if (date == "") {
 		// no date listed
-		console.log("Please insert a date.");
+		alert("Please insert a date.");
 		return false;
 	}
     //Execute whatever code comes next
@@ -31,10 +31,11 @@ function nextStep(item, date, store) {
 
 //create the list
 function addItem () {
+	var check = $("<form> <input type='checkbox'>");
 	var item = document.getElementById('item').value;
     var date = document.getElementById('date').value;
     var store = document.getElementById('store').value;
-	userEntry = item + " " + store + " " + date;
+	userEntry = check + " " + item + " " + store + " " + date;
 	paragraph = document.createElement("p");
 	paragraph.className = "added";
 	paragraph.innerHTML = userEntry;
