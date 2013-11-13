@@ -33,7 +33,7 @@ function nextStep(item, date, store) {
 function addItem (event) {
 	// Stop link from going anywhere
 	event.preventDefault();
-	var check = $("<form id='test1'><input type='checkbox' /></form>");
+	var check = $("<form id='storelist'><input type='checkbox' /></form>");
 	var item = document.getElementById('item').value;
     var date = document.getElementById('date').value;
     var store = document.getElementById('store').value;
