@@ -1,0 +1,5 @@
+userEntry = check + " " + item + " " + store + " " + date;
+	paragraph = document.createElement("p");
+	paragraph.className = "added";
+	paragraph.innerHTML = userEntry;
+	$('#items').prepend(paragraph);

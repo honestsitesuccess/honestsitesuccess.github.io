@@ -30,16 +30,23 @@ function nextStep(item, date, store) {
 }
 
 //create the list
-function addItem () {
-	var check = $("<form> <input type='checkbox'>");
+function addItem (event) {
+	// Stop link from going anywhere
+	event.preventDefault();
+	var check = $("<form id='test1'><input type='checkbox' /></form>");
 	var item = document.getElementById('item').value;
     var date = document.getElementById('date').value;
     var store = document.getElementById('store').value;
-	userEntry = check + " " + item + " " + store + " " + date;
-	paragraph = document.createElement("p");
-	paragraph.className = "added";
-	paragraph.innerHTML = userEntry;
-	$('#items').prepend(paragraph);
+    // Create one full item to add.  
+    var completeItem = $(checkbox).append(item).append(date).append(store);
+    
+    // Add new items to the list
+
+    var itemRoot = $("#itemsAdded");
+    itemRoot.prepend(completeItem);
+	
+	// Click handler for link.
+	$("#add").on('click', addItem);
 }
 
 });
