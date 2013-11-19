@@ -59,7 +59,7 @@ p {
 }
 
 table {
-	width: 600px;
+	width: 560px;
 	left: 200px;
 	position: relative;
 }
@@ -82,7 +82,33 @@ form {
 	color: #A6B1A8;
 	text-decoration: line-through;
 	font-style: italic;
-	border-left: 4px solid #33363D;
 }
+
+.button {
+    border: 2px solid #333333;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    font-size: 1.4em;
+    height: 30px;
+    margin: 10px 5px 20px 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 110px;
+    display: inline-block;
+}
+
+#deletebutton {
+    float: right;
+    margin: 0px auto;
+    text-align: center;
+    min-height: 100px;
+}
+
+.deleteallbutton{
+    background: lightgreen;
+    font-family: "Arial", sans-serif;
+}
+
 
 

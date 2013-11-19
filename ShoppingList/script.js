@@ -34,42 +34,24 @@ function addItem (event) {
 	// Stop link from going anywhere
 	// event.preventDefault();
 	var check = $("<input type='checkbox' />");
+	var listitem = $("<div class='listitem'></div>");
 	var item = document.getElementById('item').value;
     var date = document.getElementById('date').value;
     var store = document.getElementById('store').value;
     // Create one full item to add.  
-    var completeItem = $("#itemsAdded").append(check).append(item).append(date).append(store);
-    
+    listitem.append(check).append(item+"  ").append(date+"  ").append(store);
+    $("#itemsAdded").prepend(listitem);
     // Add new items to the list
-
-    var itemRoot = $("#itemsAdded");
-    itemRoot.prepend(completeItem);
-	
-	// Click handler for link.
-	$("#add").on('click', addItem);
-
-function deleteitem (event) {
-	//click the checkbox to remove item
-	//click the Delete Checked button to remove checked items
-	$(completeItem).prop('checked',true);
-	$('.addItem').addClass('checked');
+    check.on('click',deleteitem);
 }
 
-	$(completeItem).prop('checked',false);
-	$('.addItem').deleteClass('checked');
-} 
-
+function deleteitem (event) {
 //Toggle checked and unchecked classes when checkbox selected
-	this.check = function () {
-    $(check).prop('checked',true);
-    $('.addItem').addClass('checked');
-  }
+    $(this).parent().toggleClass("checked");
+}
 
-  this.uncheck = function () {
-    $(check).prop('checked',false);
-    $('.addItem').removeClass('checked');
-  }
-
+function deleteallitems (event) {
+	
 }
 
 });
