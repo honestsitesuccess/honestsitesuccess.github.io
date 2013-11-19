@@ -47,6 +47,29 @@ function addItem (event) {
 	
 	// Click handler for link.
 	$("#add").on('click', addItem);
+
+function deleteitem (event) {
+	//click the checkbox to remove item
+	//click the Delete Checked button to remove checked items
+	$(completeItem).prop('checked',true);
+	$('.addItem').addClass('checked');
+}
+
+	$(completeItem).prop('checked',false);
+	$('.addItem').deleteClass('checked');
+} 
+
+//Toggle checked and unchecked classes when checkbox selected
+	this.check = function () {
+    $(check).prop('checked',true);
+    $('.addItem').addClass('checked');
+  }
+
+  this.uncheck = function () {
+    $(check).prop('checked',false);
+    $('.addItem').removeClass('checked');
+  }
+
 }
 
 });

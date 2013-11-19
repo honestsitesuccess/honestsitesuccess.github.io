@@ -78,5 +78,11 @@ form {
 	font-size: 22px;
 }
 
+.checked {
+	color: #A6B1A8;
+	text-decoration: line-through;
+	font-style: italic;
+	border-left: 4px solid #33363D;
+}
 
 
