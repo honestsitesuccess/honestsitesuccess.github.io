@@ -46,12 +46,13 @@ function addItem (event) {
 function deleteitem (event) {
 //Toggle checked and unchecked classes when checkbox selected
     $(this).parent().toggleClass("checked"); //Gives ability to toggle items we have and don't have, but don't want to delete them entirely
-    $("#deleteallbutton").deleteAllItems;
+    var deleteAll = document.getElementById('deleteallbutton'); //Look for the delete button
+    deleteAll.onclick = deleteAllItems;
 }
 
 function deleteAllItems (event) {
-	if (confirm('Are you sure you want to remove all items from list?')){
-		$("itemsAdded").remove();
+	if (confirm('Are you sure you want to remove the selected items from the list?')){ //Last chance to review deletions
+		$(".checked").remove(); //Adios, amigos!
 	}
 }
 
