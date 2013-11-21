@@ -44,9 +44,9 @@ html, body{
 
 h1 {
 	color: blue;
-	font-size:44px;
+	font-size:4em;
 	text-align: center;
-	line-height: 40px;
+	line-height: 50px;
 }
 
 h2 {
