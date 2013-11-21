@@ -31,27 +31,28 @@ function nextStep(item, date, store) {
 
 //create the list
 function addItem (event) {
-	// Stop link from going anywhere
-	// event.preventDefault();
-	var check = $("<input type='checkbox' />");
-	var listitem = $("<div class='listitem'></div>");
-	var item = document.getElementById('item').value;
-    var date = document.getElementById('date').value;
-    var store = document.getElementById('store').value;
+	var check = $("<input type='checkbox' />"); //creates the checkbox
+	var listitem = $("<div class='listitem'></div>"); //creates a div to wrap all items in one string
+	var item = document.getElementById('item').value; //what am I buying?
+    var date = document.getElementById('date').value; //when am I buying it?
+    var store = document.getElementById('store').value; //where am I buying it?
     // Create one full item to add.  
-    listitem.append(check).append(item+"  ").append(date+"  ").append(store);
+    listitem.append(check).append(item+"  ").append(date+"  ").append(store);  //by adding as one div class, we can then style the entire string when we make changes to it.
     $("#itemsAdded").prepend(listitem);
     // Add new items to the list
-    check.on('click',deleteitem);
+    check.on('click',deleteitem); //How we start removing items.  Once they are in the basket, we can then click on the checkbox to mark it off the list.
 }
 
 function deleteitem (event) {
 //Toggle checked and unchecked classes when checkbox selected
-    $(this).parent().toggleClass("checked");
+    $(this).parent().toggleClass("checked"); //Gives ability to toggle items we have and don't have, but don't want to delete them entirely
+    $("#deleteallbutton").deleteAllItems;
 }
 
-function deleteallitems (event) {
-	
+function deleteAllItems (event) {
+	if (confirm('Are you sure you want to remove all items from list?')){
+		$("itemsAdded").remove();
+	}
 }
 
 });
