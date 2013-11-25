@@ -7,7 +7,7 @@ $(document).ready(function() {
 	input.onclick = checkscript;
 
 function checkscript (e) {
-    var item = document.getElementById('item').value;
+    var item = document.getElementById($.trim('item')).value;
     var date = document.getElementById('date').value;
     var store = document.getElementById('store').value;
     if (item == "") {
@@ -25,7 +25,7 @@ function checkscript (e) {
 }
 
 function nextStep(item, date, store) {
-    alert("Thanks! You want: "+item+" on "+date+" from " +store);
+//    alert("Thanks! You want: "+item+" on "+date+" from " +store);
 	addItem();
 }
 

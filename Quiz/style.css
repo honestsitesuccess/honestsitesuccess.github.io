@@ -1,0 +1,40 @@
+/* For Quiz by Mike Harmanos, HonestSiteSuccess.com, 2013.
+	http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+html, body{
+	
+}
+
+/* This app allows the user to take a multiple choice quiz on content of your choosing. At a minimum, the application should meet the following requirements:
+
+Lead the user through a set of questions. The user should only see one question at a time, with new answers presented only after they have answered the current one. You should use jQuery to move between questions as the user enters their response
+Allow the user to input his or her response to each questions with radio buttons for the user to enter their response
+When the user answers the last question, the quiz should show his or her overall score
+Each question should be stored as a JavaScript object, and you’ll want to store your list of questions in an array. For example: var questions = [{question: "What is the capital of the US", choices: ["Washington DC", "NYC", "Silicon Valley"], correct:0}];
+Let the user know where in the quiz they are at each step (i.e. “Question 3 of 5) (Optional)
+Let the user know their score so far (Optional)
+Let the user know if their previous response was correct (Optional)
+Any useful features you can come up with! (Optional)
+*/
