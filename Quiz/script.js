@@ -7,37 +7,37 @@ var questions = [{
 	question: "What's the state bird of a record seven U.S. states?",
 	choices: ["Bluebird", "Meadowlark", "Cardinal", "Robin"],
 	questionValue: 0,
-	correct: 3,
+	correct: 2,
 	answerText: "The Cardinal.  The states are Illinois, Indiana, Kentucky, North Carolina, Ohio, Virginia, and West Virginia."
 	}, {
 	question: "What movie won Best Picture at the 80th Academy Awards?",
 	choices: ["No Country for Old Men", "There Will Be Blood", "Juno", "Atonement"],
 	questionValue: 1,
-	correct: 1,
+	correct: 0,
 	answerText: "No Country for Old Men." 
 	}, {
 	question: "What presidential election year saw Republicans dub Democrats the party of 'Communism, Corruption, and Korea'?",
 	choices: ["1948", "1952", "1956", "1960"],
 	questionValue: 2,
-	correct: 2,
+	correct: 1,
 	answerText: "1952.  Dwight Eisenhower won the Presidency and the Republicans were swept into a majority of both houses of Congress."	
 	}, {
 	question: "What Hemingway character is incapable of consummating his relationship with Lady Brett Ashley?",
 	choices: ["Jake Barnes", "Robert Cohn", "Romero", "Mike Campbell"],
 	questionValue: 3,
-	correct: 1,
+	correct: 0,
 	answerText: "Jake Barnes, from the book 'The Sun Also Rises.'  Brett consummates her relationship with everyone else."	
 	}, {
 	question: "What 'black metal' gave blacksmiths their name?",
 	choices: ["Steel", "Iron", "Chromium", "Lead"],
 	questionValue: 4,
-	correct: 2,
+	correct: 1,
 	answerText: "Iron.  Iron turns black when heated."	
 	}, {
 	question: "What Olympic event has runners wearing shoes with perforations to allow for drainage?",
 	choices: ["Hurdles", "Heptathalon", "Steeplechase", "Marathon"],
 	questionValue: 5,
-	correct: 3,
+	correct: 2,
 	answerText: "Steeplechase.  There are both hurdles and water hazards in this race."	
 	}];
 
