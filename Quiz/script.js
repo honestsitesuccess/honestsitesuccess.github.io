@@ -64,14 +64,14 @@ $('body').on('click', 'input:submit', function() {
 		console.log(AnswerUser);
 		console.log(questions[i].correct);
 		console.log("Correct!");
-		$("result").html("That is correct! ");
+		$("#result").html("That is correct! ");
 		console.log(i);
 		$("#answerContainer").html(questions[i].answerText);
 		$("input:submit").hide();
 		$("#next").show();
 		$("#answersCorrect").show();
-		$("#answersCorrect").html("Wedges Earned: " + i +" of 6")
 		i += 1;
+		$("#answersCorrect").html("Wedges Earned: " + i +" of 6")
 			if (i === 5) {
 				console.log("complete")
 				$("input:submit").hide();
