@@ -72,7 +72,7 @@ $('body').on('click', 'input:submit', function() {
 		$("#answersCorrect").show();
 		i += 1;
 		$("#answersCorrect").html("Wedges Earned: " + i +" of 6")
-			if (i === 5) {
+			if (i === 6) {
 				console.log("complete")
 				$("input:submit").hide();
 				$("#restart").show();
@@ -87,8 +87,10 @@ $('body').on('click', 'input:submit', function() {
 	$("#answerContainer").html(questions[i].answerText);
 	$("input:submit").hide();
 	$("#next").show();
+	$("#answersCorrect").show();
+	i += 1;
 	$("#answersCorrect").html("Wedges Earned: " + i +" of 6")
-		if (i === 5) {
+		if (i === 6) {
 			console.log("complete")
 			$("input:submit").hide();
 			$("#restart").show();
