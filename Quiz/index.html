@@ -10,7 +10,34 @@
 </head>
 
 <body>
-
-
+<div id="quizAnswers">
+<h1>Trivial Pursuit</h1>
+<h2>Multiple Choice Edition</h2>
+<div id="questionContainer">What's the state bird of a record seven U.S. states?</div>
+	<ul>
+		<li class="answerOption">
+			<input type="radio" name="radioAnswer" id="option1" value="0">
+			<span id="1stChoice"><span></span>"Bluebird"</span>
+		</li>
+		<li class="answerOption">
+			<input type="radio" name="radioAnswer" id="option2" value="1">
+			<span id="2ndChoice"><span></span>"Meadowlark"</span>
+		</li>
+		<li class="answerOption">
+			<input type="radio" name="radioAnswer" id="option3" value="2">
+			<span id="3rdChoice"><span></span>"Cardinal"</span>
+		</li>
+		<li class="answerOption">
+			<input type="radio" name="radioAnswer" id="option4" value="3">
+			<span id="4thChoice"><span></span>"Robin"</span>
+		</li>
+	</ul>
+	<input type="submit" id="submit">
+	<div id="result"></div>
+	<div id="answerContainer"></div>
+	<button id="next" style="display: none;">Next Question </button>
+	<button id="restart" style="display: none">Play Again? </button>
+</div>
+<div id="answersCorrect" style="display: none;"></div>
 </body>
 </html>

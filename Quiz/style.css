@@ -23,9 +23,76 @@ time, mark, audio, video {
 	font-size: 100%;
 }
 
-html, body{
-	
+html 
+
+body{
+	line-height: 1;	
+	font-family: 'Palatino', 'Times New Roman', Times, serif;
+	background: url("images/bg.png");
 }
+
+ol, ul {
+	list-style: none;
+}
+
+h1 {
+	font-family: 'Donna Bodoni Aa Script', 'Edwardian Script ITC', 'Brush Script MT', 'Times New Roman', serif;
+	font-size: 4em;
+}
+
+h2 {
+	font-family: 'Donna Bodoni Aa Script', 'Edwardian Script ITC', 'Brush Script MT', 'Times New Roman', serif;
+	font-size: 2em;
+}
+
+#answerOption {
+	display: block;
+}
+
+#result {
+	padding-top: 4px;
+}
+
+#questionContainer {
+	font-family: 'Palatino', 'Times New Roman', 'Times', serif;
+	font-size: 20px;	
+}
+
+#quizContainer {
+	width: 400px;
+	height: 200px;
+	background: url(/cardbg.png);
+	margin: 2px;
+	text-align: center;
+	position: absolute;
+	padding-bottom: 50px;
+}
+
+ul {
+	text-align: left;
+}
+
+li {
+
+}
+
+#answerContainer {
+	text-align: left;
+}
+
+#answersCorrect {
+	clear: both;
+	position: relative;
+	width: 300px;
+	height: 150px;
+}
+
+#restart {
+	background-color: #372892;
+}
+
+
+	
 
 /* This app allows the user to take a multiple choice quiz on content of your choosing. At a minimum, the application should meet the following requirements:
 
