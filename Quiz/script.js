@@ -102,7 +102,6 @@ $('body').on('click', 'input:submit', function() {
 $('body').on('click', '#next', function () {
 	$('input:submit').show();
 	$("#next").hide();
-	i = i + 1;
 	console.log("question" + i)
 	$("#questionContainer").html(questions[i].question);
 	$("#1stChoice").html(questions[i].choices[0]);
