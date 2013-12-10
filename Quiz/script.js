@@ -54,7 +54,7 @@ $("#3rdChoice").append(questions[i].choices[2]);
 $("#4thChoice").append(questions[i].choices[3]);
 
 //submit button
-$('body').on('click', 'input:submit', function () ) {
+$('body').on('click', 'input:submit', function() {
 	var AnswerUser = $("input[type='radio']:checked").val();
 
 	if (AnswerUser == undefined) {
