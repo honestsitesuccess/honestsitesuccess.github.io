@@ -70,8 +70,10 @@ $('body').on('click', 'input:submit', function() {
 		$("input:submit").hide();
 		$("#next").show();
 		$("#answersCorrect").show();
+		$("#answerContainer").show();
 		i += 1;
-		$("#answersCorrect").html("Wedges Earned: " + i +" of 6")
+		AnswerScore += 1;
+		$("#answersCorrect").html("Wedges Earned: " + AnswerScore +" of 6")
 			if (i === 6) {
 				console.log("complete")
 				$("input:submit").hide();
@@ -88,8 +90,10 @@ $('body').on('click', 'input:submit', function() {
 	$("input:submit").hide();
 	$("#next").show();
 	$("#answersCorrect").show();
+	$("#answerContainer").show();
 	i += 1;
-	$("#answersCorrect").html("Wedges Earned: " + i +" of 6")
+	AnswerScore += 0;
+	$("#answersCorrect").html("Wedges Earned: " + AnswerScore +" of 6")
 		if (i === 6) {
 			console.log("complete")
 			$("input:submit").hide();
@@ -104,13 +108,14 @@ $('body').on('click', 'input:submit', function() {
 $('body').on('click', '#next', function () {
 	$('input:submit').show();
 	$("#next").hide();
+	$("#answerContainer").hide();
 	console.log("question" + i)
 	$("#questionContainer").html(questions[i].question);
 	$("#1stChoice").html(questions[i].choices[0]);
 	$("#2ndChoice").html(questions[i].choices[1]);
 	$("#3rdChoice").html(questions[i].choices[2]);
 	$("#4thChoice").html(questions[i].choices[3]);
-	$("answerContainer").html("");
+	$("#answerContainer").html("");
 	$("#result").html("");
 	$("input:radio").prop('checked', false);
 });
@@ -120,6 +125,7 @@ $('body').on('click', '#next', function () {
         $(this).hide();
         $("#next").hide();
         i = 0;
+        AnswerScore = 0;
         $("#questionContainer").html(questions[i].question);
         $("#1stChoice").html(questions[i].choices[0]);
         $("#2ndChoice").html(questions[i].choices[1]);
