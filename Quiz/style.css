@@ -68,6 +68,9 @@ h2 {
 #answerOption {
 	display: block;
 	color: orange;
+	padding-left: 40px;
+	padding-top: 60px;
+	position: relative;
 }
 
 #result {
@@ -75,14 +78,29 @@ h2 {
 	color: orange;
 }
 
+#card {
+	width: 400px;
+	height: 264px;
+	background: url(./cardbg.png);
+}
+
+#QAContainer {
+	padding-left: 10px;
+	padding-top: 10px;
+	width: 380px;
+	height: 244px;
+	position: absolute;
+}
+
 #questionContainer {
 	font-family: 'Palatino', 'Times New Roman', 'Times', serif;
 	font-size: 20px;	
 	color: orange;
+	width: 360px;
+	height: 224px;
+	position: absolute;
 	padding-left: 20px;
-	padding-right: 20px;
-	width: 400px;
-	background: url(./cardbg.png);
+	padding-top: 20px;
 }
 
 #quizContainer {
@@ -107,13 +125,15 @@ li {
 	color: orange;
 	width: 300px;
 	height: 150px;
+	padding-left: 30px;
+	padding-top: 60px;
 }
 
 #answersCorrect {
 	clear: both;
 	position: relative;
 
-	color: white;
+	color: black;
 }
 
 #restart {
