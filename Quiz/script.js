@@ -4,36 +4,42 @@ $(document).ready(function() {
 	
 //questions
 var questions = [{
+	category: "GEOGRAPHY",
 	question: "What's the state bird of a record seven U.S. states?",
 	choices: ["Bluebird", "Meadowlark", "Cardinal", "Robin"],
 	questionValue: 0,
 	correct: 2,
 	answerText: "The Cardinal.  The states are Illinois, Indiana, Kentucky, North Carolina, Ohio, Virginia, and West Virginia."
 	}, {
+	category: "ENTERTAINMENT",
 	question: "What movie won Best Picture at the 80th Academy Awards?",
 	choices: ["No Country for Old Men", "There Will Be Blood", "Juno", "Atonement"],
 	questionValue: 1,
 	correct: 0,
 	answerText: "No Country for Old Men." 
 	}, {
+	category: "HISTORY",
 	question: "What presidential election year saw Republicans dub Democrats the party of 'Communism, Corruption, and Korea'?",
 	choices: ["1948", "1952", "1956", "1960"],
 	questionValue: 2,
 	correct: 1,
 	answerText: "1952.  Dwight Eisenhower won the Presidency and the Republicans were swept into a majority of both houses of Congress."	
 	}, {
+	category: "ARTS AND LITERATURE",
 	question: "What Hemingway character is incapable of consummating his relationship with Lady Brett Ashley?",
 	choices: ["Jake Barnes", "Robert Cohn", "Romero", "Mike Campbell"],
 	questionValue: 3,
 	correct: 0,
 	answerText: "Jake Barnes, from the book 'The Sun Also Rises.'  Brett consummates her relationship with everyone else."	
 	}, {
+	category: "SCIENCE AND NATURE",
 	question: "What 'black metal' gave blacksmiths their name?",
 	choices: ["Steel", "Iron", "Chromium", "Lead"],
 	questionValue: 4,
 	correct: 1,
 	answerText: "Iron.  Iron turns black when heated."	
 	}, {
+	category: "SPORTS AND LEISURE",
 	question: "What Olympic event has runners wearing shoes with perforations to allow for drainage?",
 	choices: ["Hurdles", "Heptathalon", "Steeplechase", "Marathon"],
 	questionValue: 5,
@@ -52,6 +58,13 @@ $("#1stChoice").append(questions[i].choices[0]);
 $("#2ndChoice").append(questions[i].choices[1]);
 $("#3rdChoice").append(questions[i].choices[2]);
 $("#4thChoice").append(questions[i].choices[3]);
+
+//empty pie and wedges
+var empty = $('#pie0');
+var btn = $('#btn');
+var question = 1;
+
+empty.fadeIn('slow');
 
 //submit button
 $('body').on('click', 'input:submit', function() {
@@ -79,7 +92,11 @@ $('body').on('click', 'input:submit', function() {
 				$("input:submit").hide();
 				$("#restart").show();
 				$("#next").hide();
-			}
+		submit.click(function(e){
+			$('#pie'+question).fadeIn('slow');
+			question++;
+			});	
+		}
 	}
 
 	else {
