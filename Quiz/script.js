@@ -53,6 +53,7 @@ var AnswerUser = "";
 var i = 0
 console.log("question" + i)
 
+$("#questionContainer").html(questions[i].category);
 $("#questionContainer").html(questions[i].question);
 $("#1stChoice").append(questions[i].choices[0]);
 $("#2ndChoice").append(questions[i].choices[1]);
@@ -65,6 +66,11 @@ var btn = $('#btn');
 var question = 1;
 
 empty.fadeIn('slow');
+
+submit.click(function(e){
+			$('#pie'+question).fadeIn();
+			question++;
+			});	
 
 //submit button
 $('body').on('click', 'input:submit', function() {
@@ -92,10 +98,6 @@ $('body').on('click', 'input:submit', function() {
 				$("input:submit").hide();
 				$("#restart").show();
 				$("#next").hide();
-		submit.click(function(e){
-			$('#pie'+question).fadeIn('slow');
-			question++;
-			});	
 		}
 	}
 

@@ -127,50 +127,57 @@ li {
 }
 
 #pie {
-	margin-left: 400px;
+	margin-left: 250px;
 	position: absolute;
-}
-
-#pie img {
-	position: absolute;
-	width: 400px;
-	height: 400px;
-	display: none;
-	z-index: 20;
 }
 
 #pie0 {
+	margin-left: 250px;
 	position: absolute;
+	width: 400px;
+	height: 400px;
 	z-index: 2;
 }
 
 #pie1 {
+	margin-left: 250px;
 	position: absolute;
-	z-index: 83;
+	display: none;
+	z-index: 30;
 }
 
 #pie2 {
+	margin-left: 250px;
 	position: absolute;
+	display: none;
 	z-index: 30;
 }
 
 #pie3 {
+	margin-left: 200px;
 	position: absolute;
+	display: none;
 	z-index: 30;
 }
 
 #pie4 {
+	margin-left: 200px;
 	position: absolute;
+	display: none;
 	z-index: 30;
 }
 
 #pie5 {
+	margin-left: 200px;
 	position: absolute;
+	display: none;
 	z-index: 30;
 }
 
 #pie6 {
+	margin-left: 200px;
 	position: absolute;
+	display: none;
 	z-index: 30;
 }
 
@@ -184,7 +191,7 @@ li {
 }
 
 #restart {
-	background-color: #FF9900;
+	background-color: white;
 }
 
 
