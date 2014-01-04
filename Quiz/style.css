@@ -82,6 +82,7 @@ h2 {
 	height: 264px;
 	background: url(./cardbg.png);
 	position: absolute;
+	z-index: 1;
 }
 
 #QAContainer {
@@ -89,7 +90,7 @@ h2 {
 	padding-top: 10px;
 	width: 380px;
 	height: 244px;
-	position: relative;
+	position: absolute;
 }
 
 #questionContainer {
@@ -98,32 +99,32 @@ h2 {
 	color: orange;
 	width: 360px;
 	height: 224px;
-	position: relative;
+	position: absolute;
 	padding-left: 20px;
 	padding-top: 20px;
 }
 
 #quizContainer {
 	margin: 2px;
-	text-align: center;
-	position: relative;
+	position: absolute;
 	padding-bottom: 5px;
-	color: orange;
+	z-index: 2;
 }
 
 ul {
-	text-align: left;
-	color: orange;
+	color: black;
+	padding-top: 75px;
 }
 
 li {
-
+	padding-left: 20px;
+	z-index: 8;
 }
 
 #answerContainer {
 	text-align: left;
-	color: orange;
-	position: relative;
+	color: black;
+	position: absolute;
 }
 
 #pie {
@@ -154,28 +155,28 @@ li {
 }
 
 #pie3 {
-	margin-left: 200px;
+	margin-left: 250px;
 	position: absolute;
 	display: none;
 	z-index: 30;
 }
 
 #pie4 {
-	margin-left: 200px;
+	margin-left: 250px;
 	position: absolute;
 	display: none;
 	z-index: 30;
 }
 
 #pie5 {
-	margin-left: 200px;
+	margin-left: 250px;
 	position: absolute;
 	display: none;
 	z-index: 30;
 }
 
 #pie6 {
-	margin-left: 200px;
+	margin-left: 250px;
 	position: absolute;
 	display: none;
 	z-index: 30;
@@ -185,7 +186,7 @@ li {
 #answersCorrect {
 	text-align: center;
 	clear: both;
-	position: relative;
+	position: absolute;
 	color: orange;
 	margin-top: 420px;
 }
@@ -196,8 +197,10 @@ li {
 
 
 
-#footer p {
-	font-size: 10px;
+#footer {
+	text-align: center;
+	font-size: 8px;
+	color: white;
 }
 
 

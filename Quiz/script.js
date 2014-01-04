@@ -65,12 +65,7 @@ var empty = $('#pie0');
 var btn = $('#btn');
 var question = 1;
 
-empty.fadeIn('slow');
-
-submit.click(function(e){
-			$('#pie'+question).fadeIn();
-			question++;
-			});	
+empty.fadeIn('3000');
 
 //submit button
 $('body').on('click', 'input:submit', function() {
@@ -90,6 +85,8 @@ $('body').on('click', 'input:submit', function() {
 		$("#next").show();
 		$("#answersCorrect").show();
 		$("#answerContainer").show();
+		$("#pie"+question).fadeIn('3000');
+			question++;	
 		i += 1;
 		AnswerScore += 1;
 		$("#answersCorrect").html("Wedges Earned: " + AnswerScore +" of 6")
@@ -110,6 +107,7 @@ $('body').on('click', 'input:submit', function() {
 	$("#next").show();
 	$("#answersCorrect").show();
 	$("#answerContainer").show();
+		question++; //to advance the correct wedge
 	i += 1;
 	AnswerScore += 0;
 	$("#answersCorrect").html("Wedges Earned: " + AnswerScore +" of 6")
