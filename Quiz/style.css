@@ -94,7 +94,7 @@ h2 {
 
 #category {
 	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 15px;
 	width: 380px;
 	height: 24px;
 	position: absolute;
@@ -108,13 +108,13 @@ h2 {
 	height: 40px;
 	position: absolute;
 	padding-left: 20px;
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 
 ul {
 	color: black;
-	padding-top: 96px;
+	padding-top: 90px;
 	width: 340px;
 }
 
@@ -136,6 +136,16 @@ li {
 	padding-left: 20px;
 	width: 340px;
 }
+
+#submit {
+	margin-left: 30px;
+}
+
+#next {
+	margin-left: 130px;
+	margin-bottom: 10px;
+}
+
 
 #pie {
 	margin-left: 250px;
@@ -204,10 +214,10 @@ li {
 }
 
 #restart {
-	background-color: white;
+	background-color: orange;
 	z-index: 30;
-	margin-top: 600px;
-	margin-left: 380px;
+	margin-top: 212px;
+	margin-left: 66px;
 	position: absolute;
 }
 

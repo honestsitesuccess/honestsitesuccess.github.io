@@ -23,7 +23,7 @@ var questions = [{
 	choices: ["1948", "1952", "1956", "1960"],
 	questionValue: 2,
 	correct: 1,
-	answerText: "1952.  Dwight Eisenhower won the Presidency and the Republicans were swept into a majority of both houses of Congress."	
+	answerText: "1952.  Dwight Eisenhower won the Presidency and the Republicans won both houses of Congress."
 	}, {
 	category: "ARTS AND LITERATURE",
 	question: "What Hemingway character is incapable of consummating his relationship with Lady Brett Ashley?",
