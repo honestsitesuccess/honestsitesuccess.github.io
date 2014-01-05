@@ -53,7 +53,7 @@ var AnswerUser = "";
 var i = 0
 console.log("question" + i)
 
-$("#questionContainer").html(questions[i].category);
+$("#category").html(questions[i].category);
 $("#questionContainer").html(questions[i].question);
 $("#1stChoice").append(questions[i].choices[0]);
 $("#2ndChoice").append(questions[i].choices[1]);
@@ -127,6 +127,7 @@ $('body').on('click', '#next', function () {
 	$("#next").hide();
 	$("#answerContainer").hide();
 	console.log("question" + i)
+	$("#category").html(questions[i].category);
 	$("#questionContainer").html(questions[i].question);
 	$("#1stChoice").html(questions[i].choices[0]);
 	$("#2ndChoice").html(questions[i].choices[1]);
@@ -143,6 +144,8 @@ $('body').on('click', '#next', function () {
         $("#next").hide();
         i = 0;
         AnswerScore = 0;
+        empty.fadeIn('3000');
+        $("#category").html(questions[i].category);
         $("#questionContainer").html(questions[i].question);
         $("#1stChoice").html(questions[i].choices[0]);
         $("#2ndChoice").html(questions[i].choices[1]);

@@ -89,31 +89,33 @@ h2 {
 	padding-left: 10px;
 	padding-top: 10px;
 	width: 380px;
-	height: 244px;
+	position: absolute;
+}
+
+#category {
+	padding-left: 20px;
+	padding-top: 20px;
+	width: 380px;
+	height: 24px;
 	position: absolute;
 }
 
 #questionContainer {
 	font-family: 'Palatino', 'Times New Roman', 'Times', serif;
-	font-size: 20px;	
+	font-size: 18px;	
 	color: orange;
-	width: 360px;
-	height: 224px;
+	width: 340px;
+	height: 40px;
 	position: absolute;
 	padding-left: 20px;
-	padding-top: 20px;
+	padding-top: 40px;
 }
 
-#quizContainer {
-	margin: 2px;
-	position: absolute;
-	padding-bottom: 5px;
-	z-index: 2;
-}
 
 ul {
 	color: black;
-	padding-top: 75px;
+	padding-top: 96px;
+	width: 340px;
 }
 
 li {
@@ -121,10 +123,18 @@ li {
 	z-index: 8;
 }
 
+#result {
+	padding-left: 20px;
+
+}
+
 #answerContainer {
 	text-align: left;
 	color: black;
-	position: absolute;
+	font-size: 12px;
+	position: relative;
+	padding-left: 20px;
+	width: 340px;
 }
 
 #pie {
@@ -184,15 +194,21 @@ li {
 
 
 #answersCorrect {
-	text-align: center;
-	clear: both;
 	position: absolute;
-	color: orange;
+	color: navy;
 	margin-top: 420px;
+	margin-left: 380px;
+	width: 100px;
+	font-size: 40px;
+	text-align: center;
 }
 
 #restart {
 	background-color: white;
+	z-index: 30;
+	margin-top: 600px;
+	margin-left: 380px;
+	position: absolute;
 }
 
 
