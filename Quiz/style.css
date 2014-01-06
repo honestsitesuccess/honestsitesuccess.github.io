@@ -35,6 +35,13 @@ ol, ul {
 	list-style: none;
 }
 
+@font-face {
+  font-family: 'Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/donnabodoniaascriptpdf.ttf);
+}
+
 h1 {
 	font-family: 'Donna Bodoni Aa Script', 'Edwardian Script ITC', 'Brush Script MT', 'Times New Roman', serif;
 	font-size: 4em;
