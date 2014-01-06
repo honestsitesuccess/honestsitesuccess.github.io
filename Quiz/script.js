@@ -145,6 +145,12 @@ $('body').on('click', '#next', function () {
         i = 0;
         AnswerScore = 0;
         empty.fadeIn('3000');
+        $("#pie1").fadeOut('1000');
+        $("#pie2").fadeOut('1000');
+        $("#pie3").fadeOut('1000');
+        $("#pie4").fadeOut('1000');
+        $("#pie5").fadeOut('1000');
+        $("#pie6").fadeOut('1000');
         $("#category").html(questions[i].category);
         $("#questionContainer").html(questions[i].question);
         $("#1stChoice").html(questions[i].choices[0]);
