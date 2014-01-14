@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
 
-var currentTimeline = TimelineSetter.Timeline.boot(options);
+var currentTimeline = TimelineSetter.Timeline.boot();
 currentTimeline.api.onLoad(function() {
   console.log("I'm ready")
 });
