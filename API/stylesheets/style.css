@@ -29,7 +29,17 @@ body{
 	background: #00005C;
 	font-size: 1em;
 	height: 100%;
-	background: url(./bg.png) no-repeat;
+}
+
+#full-screen-background-image {
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 800px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -100;
 }
 
 /* Wrapper for page content to push down footer */
