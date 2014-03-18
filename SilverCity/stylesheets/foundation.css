@@ -47,11 +47,6 @@ meta.foundation-mq-xxlarge {
   font-family: "/only screen and (min-width:120.063em)/";
   width: 120.063em; }
 
-@font-face {
-  font-family: "Blair";
-  src: url('./BlairITC.ttf');
-}
-
 *,
 *:before,
 *:after {
@@ -830,8 +825,8 @@ html, body {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
     float: left; }
 
   .large-1 {
@@ -1160,7 +1155,7 @@ meta.foundation-mq-topbar {
     color: white;
     padding: 12px 0 12px 0;
     padding-left: 15px;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;;
     font-size: 0.8125rem;
     font-weight: normal;
     background: #333333; }
@@ -1585,10 +1580,11 @@ html, body {
   .inline-list > li {
     list-style: none;
     float: left;
-    margin-left: 1.375rem;
+    margin-left: 0.4rem;
     display: block; }
     .inline-list > li > * {
-      display: block; }
+      display: block; 
+      vertical-align: middle;}
 
 /*
 New Syntax, allows to optionally calculate on a different base value to counter compounding effect of rem's.
@@ -1642,7 +1638,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2323,7 +2319,7 @@ html, body {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Verdana, Arial, Helvetica, sans-serif;; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -2331,7 +2327,7 @@ html, body {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: Verdana, Arial, Helvetica, sans-serif;; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -2727,7 +2723,7 @@ html, body {
       padding-right: 2rem;
       padding-bottom: 1.0625rem;
       padding-left: 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Verdana, Arial, Helvetica, sans-serif;;
       font-size: 1rem; }
       .tabs dd > a:hover {
         background: #e1e1e1; }
@@ -2881,7 +2877,7 @@ html, body {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: inside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: Verdana, Arial, Helvetica, sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
@@ -2893,7 +2889,7 @@ html, body {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: Verdana, Arial, Helvetica, sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -2967,7 +2963,7 @@ html, body {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
       font-size: 1rem; }
       .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -3144,9 +3140,7 @@ ol,
 li,
 h1,
 h2,
-h3 {
-  font-family: "DINAlternateBold", "Helvetica Neue", "Helvetica" sans-serif;
-}
+h3,
 h4,
 h5,
 h6,
@@ -3187,7 +3181,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -3207,7 +3201,6 @@ h2 {
   font-size: 1.6875rem; }
 
 h3 {
-  font-family: "DINAlternateBold", "Helvetica Neue", "Helvetica" sans-serif;
   font-size: 1.375rem; }
 
 h4 {
@@ -4094,7 +4087,7 @@ html, body {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4327,7 +4320,7 @@ html, body {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -4983,7 +4976,8 @@ html, body {
 table {
   background: white;
   margin-bottom: 1.25rem;
-  border: solid 1px #dddddd; }
+  border: solid 1px #dddddd; 
+  max-width: 100%}
   table thead,
   table tfoot {
     background: whitesmoke; }
@@ -4991,14 +4985,14 @@ table {
     table thead tr td,
     table tfoot tr th,
     table tfoot tr td {
-      padding: 0.5rem 0.625rem 0.625rem;
+      padding: 0rem 0rem 0rem;
       font-size: 0.875rem;
       font-weight: bold;
       color: #222222;
       text-align: left; }
   table tr th,
   table tr td {
-    padding: 0.5625rem 0.625rem;
+    padding: 0.2rem 0.3rem;
     font-size: 0.875rem;
     color: #222222; }
   table tr.even, table tr.alt, table tr:nth-of-type(even) {
@@ -6319,15 +6313,10 @@ th.hide-for-touch {
   display: table-cell !important; }
 
 #top {
-  padding: 2px;
-}
-
-.large-9-columns {
-  background-image: url(./images/border_left.jpg);
+  padding-top: 2px;
 }
 
 #top h3 {
-  font-family: "Blair", "Helvetica Neue", "Helvetica", sans-serif;
   font-size: 16px;
   color: #204099;
   font-weight: lighter;
@@ -6339,27 +6328,73 @@ th.hide-for-touch {
 
 #dropdown {
   padding-top: 4px;
-  background-color: #993300;
+  vertical-align: middle;
 }
 
 #dropdownday {
+  padding-top: 4px;
   font-size: 12px;
   color: white;
-  font-family: Verdana, sans-serif;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
 
-#content-blocks {
-  background: #204099;
-  color: white;
-  padding: 4px;
+#firstband {
+  font-size: 11px;
+  line-height: 12px;
 }
 
-#content-blocks h3 {
-  font-family: "Blair", "Helvetica Neue", "Helvetica", sans-serif;
+#firstband ul {
+  line-height: 12px;
+  font-style: underline;
+}
+
+#firstband ul li {
+  text-indent: 20px;
+  font-size: 10px;
+}
+
+#firstband ul li a {
+  text-decoration: underline;
+  color: #333333;
+  font-size: 10px;
+}
+
+#firstband h3 {
+  color: #9C3000;
+  font-size: 11px;
+}
+
+#firstband h2 {
+  color: #9C3000;
   font-size: 14px;
-  font-weight: 200;
+}
+
+.whitefirst {
+  background-color: white;
+}
+
+#secondmenu {
+}
+
+#secondmenu ul li{
+  padding-top: 4px;
+}
+
+#secondmenu ul li a{
   color: white;
+  font-style: underline;
+  font-weight: 600;
+}
+
+#notices-calendar {
+  
+}
+
+.mayor_welcome_head {
+  font-size:14px;
+  color: #9C3000;
+  font-weight:bold;
 }
 
 #footer {
