@@ -6315,12 +6315,27 @@ th.hide-for-touch {
 
 #top {
   padding-top: 2px;
+  height:100%;
 }
 
 #top h3 {
   font-size: 16px;
   color: #204099;
   font-weight: lighter;
+}
+
+.bgimg {
+  background-image:url(../images/town_of_silver_city_mast_1.jpg);
+  background-repeat:no-repeat;
+  height:186px;
+}
+
+.nine_one_one {
+  font-size: 10px;
+  font-weight: 600;
+  color: #993300;
+  text-align: right;
+  margin-bottom:0;
 }
 
 .breaking_news {
