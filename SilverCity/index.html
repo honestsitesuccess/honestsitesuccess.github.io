@@ -49,7 +49,9 @@
 <div id="dropdown">
 <div class="row" style="background-color: #993300" style="vertical-align: middle">
   <div id="dropdownbg">
-    <div class="small-2 columns">
+    <div class="large-12 columns">
+      <ul class="inline-list">
+      <li>
       <div id="dropdownday">
         <script type="text/javascript">
     var monthNames = new Array("January ","February ","March ","April ","May ","June ","July ","August ","September ","October ","November ","December ");
@@ -57,8 +59,8 @@
     document.write(monthNames[now.getMonth()] + [now.getDate()] + ", " + [now.getFullYear()]);
     </script>
       </div> <!--Dropdown day -->
-    </div>
-    <div class="small-2 columns">  
+    </li>
+    <li>  
       <select name="Departments" onChange="MM_jumpMenu('parent',this,0)">
           <option selected>Town Departments:</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=64,794uj">Clerk</option>
@@ -79,8 +81,8 @@
           <option class="link" value="../r/town_of_silver_city_NM.php?r=28,g92jt">Utilities</option>
           <option class="link" value="../index.php">Home</option>
           </select>
-        </div>
-        <div class="small-3 columns">
+        </li>
+        <li>
           <select name="Boards" onChange="MM_jumpMenu('parent',this,0)">
           <option selected>Town Boards &amp; Committees:</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=13,xhfuk">Cemetery Board</option>
@@ -96,8 +98,8 @@
           <option  class="link" value="../r/town_of_silver_city_NM.php?r=19,qfa8w">Recycling Advisory</option>
           <option  class="link" value="../index.php">Home</option>
           </select>
-        </div>
-        <div class="small-2 columns">
+        </li>
+        <li>
           <select name="services" onChange="MM_jumpMenu('parent',this,0)">
           <option selected>Town Information:</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=58,9fgzn">About Silver City</option>
@@ -116,7 +118,7 @@
           <option class="link" value="http://www.silvercitypublicsafety.org/">Crime Info</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=58,f7mbk">Economic Dev.</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=29,rvq3s">Election Info</option>
-          <option class="link" value="../r/town_of_silver_city_NM.php?r=21,xp6aq">Emergency notification</option>                    
+          <option class="link" value="../r/town_of_silver_city_NM.php?r=21,xp6aq">Emergency notification</option>                   
           <option class="link" value="../r/town_of_silver_city_NM.php?r=72,vmk8j">Employment</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=58,anxgs">FAQs</option>
           <option class="link" value="../r/town_of_silver_city_NM.php?r=26,5utgv">Find your councilor</option>
@@ -148,14 +150,15 @@
           <option class="link" value="../r/town_of_silver_city_NM.php?r=99,mzkqr">Useful sites</option>
           <option class="link" value="../index.php">Home</option>
           </select>
-        </div>
-        <div class="small-3 columns">
-          <div style="display: inline;">
+        </li>
+        <li>
           <form style="display: inline;" method="get" action="../search/search_template.php">
-          <input style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; height:14px" onfocus="this.value=''" type="text" name="zoom_query" size="10" value="Search site" />
+          <input style="font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; height:14px" onfocus="this.value=''" type="text" name="zoom_query" size="30" value="Search site" />
           <input type="hidden" name="zoom_and"  value=1 />
+        </li>
+        <li>
           <input type="submit" value="Go" /></form>
-          </div>
+        </li>
         </div> <!--background-->  
         </div>
   </div>
@@ -199,29 +202,28 @@
         <li><a style="color: rgb(0, 0, 0); " href="#" onclick="javascript:window.open('../contact_us.php', 'none', 'menubar=no,scrollbars=yes,resizable=yes,location=no,directories=no,status=no,width=470,height=550');">Or just let us know</a> what you think!</li>
       </ul>
       <h3>See more of our photo galleries:</h3>
-      <p><a href="http://www.townofsilvercity.org/r/photo_galleries.php"><img src="http://www.townofsilvercity.org/phpThumb.php?src=images/rotators/pelham_nature/wnmu.jpg&w=60" border="0"></a>
-      <a href="http://www.townofsilvercity.org/r/photo_galleries.php"><img src="http://www.townofsilvercity.org/phpThumb.php?src=images/2.jpg&w=60" border="0"></a>
-      <a style="color: rgb(0, 0, 0);" href="http://www.townofsilvercity.org/r/photo_galleries.php"><img src="http://www.townofsilvercity.org/phpThumb.php?src=images/rotators/silver_city_koa/big_horn.jpg&w=60" border="0"></a>
+      <p><a href="http://www.townofsilvercity.org/r/photo_galleries.php"><img src="http://www.townofsilvercity.org/images/rotators/pelham_nature/wnmu.jpg" width="60" border="0"></a>
+      <a href="http://www.townofsilvercity.org/r/photo_galleries.php"><img src="http://www.townofsilvercity.org/images/2.jpg" width="60" border="0"></a>
+      <a style="color: rgb(0, 0, 0);" href="http://www.townofsilvercity.org/r/photo_galleries.php"><img src="http://www.townofsilvercity.org/images/rotators/silver_city_koa/big_horn.jpg" width="60" border="0"></a>
       </p>
     </div> <!--3 columns-->
     <div class="large-6 columns" style="background-color:rgb(226, 234, 239)">
       <ul class="orbit-container" data-orbit>
-        <li data-orbit-slide="slide1"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/1.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/1.jpg"> <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
-        <li data-orbit-slide="slide2"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/2.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/2.jpg"> <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
-        <li data-orbit-slide="slide3"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/3.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/3.jpg"> <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
-        <li data-orbit-slide="slide4"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/4.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/4.jpg"> <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
-        <li data-orbit-slide="slide5"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/5.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/5.jpg"> <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
-        <li data-orbit-slide="slide6"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/6.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/6.jpg&h=100" border="0" >
-        <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
-        <li data-orbit-slide="slide7"> <a href="http://www.townofsilvercity.org/images/rotators/cruizers/7.jpg"> <img src="http://www.townofsilvercity.org/phpThumb.php?src=/images/rotators/cruizers/7.jpg&h=100" border="0"> <div class="orbit-caption">Late-Summer fun in Silver City always includes the Run to Copper Country Car Show, sponsored by <a href='http://www.coppercountrycruizers.com/' target='_blank'>Copper Country Cruizers</a> and featuring hot cars from the 1920s to today!" title="Run to Copper Country Car Show"/></div> </li>
+        <li data-orbit-slide="slide1"> <img src="http://www.townofsilvercity.org/images/rotators/properties/municipal_court.jpg"> <div class="orbit-caption"><strong>Silver City Municipal Court</strong><br />The Town of Silver City's Municipal Court, open from 8 am to 4 pm, is at 215 North Bullard, in the Historic Downtown District. Photo by Silver City Police Chief Ed Reynolds.</div> </li>
+        <li data-orbit-slide="slide2"> <img src="http://www.townofsilvercity.org/images/rotators/properties/town_hall.jpg"> <div class="orbit-caption">Sitting on the corner of Bullard and Broadway in the Historic Downtown, Town Hall houses most administrative functions for Silver City as well as utility billing offices and payment counters. Photo by Silver City Police Chief Ed Reynolds.</div> </li>
+        <li data-orbit-slide="slide3"> <img src="http://www.townofsilvercity.org/images/rotators/properties/public_safety.jpg"> <div class="orbit-caption">Silver City's Public Safety Building houses the Silver City Police Department and one of two fire department station houses. Photo by Silver City Police Chief Ed Reynolds.</div> </li>
+        <li data-orbit-slide="slide4"> <img src="http://www.townofsilvercity.org/images/rotators/properties/silver_city_murray_ryan_visitor_center.jpg"> <div class="orbit-caption">Find information on things to do, places to go and events for year-round fun at the Murray Ryan Visitor Center, 201 N. Hudson Street. Photo by Silver City Police Chief Ed Reynolds.</div> </li>
+        <li data-orbit-slide="slide5"> <img src="http://www.townofsilvercity.org/images/rotators/properties/silver_city_museum.jpg"> <div class="orbit-caption">The Silver City Museum creates opportunities for residents and visitors to explore, understand, and celebrate the rich and diverse cultural heritage of southwestern New Mexico. Photo by Silver City Police Chief Ed Reynolds.</div> </li>
+        <li data-orbit-slide="slide6"> <img src="http://www.townofsilvercity.org/images/rotators/properties/water_plant.jpg" border="0" >
+        <div class="orbit-caption">Silver City's historic water plant is being restored by civic-minded groups intent on preserving the Town's landmarks</div> </li>
         </ul>
-        <a data-orbit-link="slide1" class="small-button"></a>
+        <br />
+        <a data-orbit-link="slide1" class="orbit-bullets"></a>
         <a data-orbit-link="slide2" class="small-button"></a>
         <a data-orbit-link="slide3" class="small-button"></a>
         <a data-orbit-link="slide4" class="small-button"></a>
         <a data-orbit-link="slide5" class="small-button"></a>
-        <a data-orbit-link="slide6" class="small-button"></a>
-        <a data-orbit-link="slide7" class="small-button"></a>  
+        <a data-orbit-link="slide6" class="small-button"></a> 
       </div><!--column-->
       <div class="large-3 columns" style="background-color:white">
         <h2><strong>Welcome to Silver City!</strong></h2>
@@ -268,9 +270,7 @@
       </ul>
     </div>
   </div>
-</div>
-
-<!-- Three-up Content Blocks -->
+</div><!--end secondmenu-->
 <div id="notices-calendar">
   <div class="row">
     <div class="large-6 columns" style="background-color:rgb(226, 234, 239)">
@@ -288,9 +288,7 @@
     <li class="TabbedPanelsTab"><a href="#">Code of<br />Ordinances</a> </li>
     <li class="TabbedPanelsTab"><a href="#">Town<br />Regulations</a> </li>
   </ul>
-
   <div style="width:465; height:506px" class="TabbedPanelsContentGroup">
-
 <div class="TabbedPanelsContent">
 <iframe frameborder="1" width="450" height="498" style="background-color:#FFFFFF"  scrolling="yes" src="http://www.townofsilvercity.org/r/tabbed_notices.php"></iframe>
 </div>

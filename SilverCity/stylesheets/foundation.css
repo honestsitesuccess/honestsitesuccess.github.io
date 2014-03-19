@@ -1572,20 +1572,20 @@ html, body {
   height: 100%; }
 
 .inline-list {
-  margin: 0 auto 1.0625rem auto;
+  margin: 0.350rem auto 0.350rem auto;
   margin-left: -1.375rem;
   margin-right: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
+  text-align: center;
   overflow: hidden; }
   .inline-list > li {
     list-style: none;
-    float: left;
     margin-left: 0.4rem;
-    display: block; }
+    display: inline-block; 
+    text-align: center;}
     .inline-list > li > * {
-      display: block; 
-      vertical-align: middle;}
+      display: block; }
 
 /*
 New Syntax, allows to optionally calculate on a different base value to counter compounding effect of rem's.
@@ -2475,11 +2475,11 @@ html, body {
       .orbit-container .orbit-slides-container > * .orbit-caption {
         position: absolute;
         bottom: 0;
-        background-color: rgba(51, 51, 51, 0.8);
-        color: white;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #333333;
         width: 100%;
-        padding: 0.625rem 0.875rem;
-        font-size: 0.875rem; }
+        padding: 0.625rem;
+        font-size: 0.625rem; }
   .orbit-container .orbit-slide-number {
     position: absolute;
     top: 10px;
@@ -6358,15 +6358,17 @@ th.hide-for-touch {
 #firstband {
   font-size: 11px;
   line-height: 12px;
+  padding-left:0.625rem;
 }
 
 #firstband ul {
   line-height: 12px;
   font-style: underline;
+
 }
 
 #firstband ul li {
-  text-indent: 20px;
+  padding-left: 0.875rem;
   font-size: 10px;
 }
 
@@ -6393,13 +6395,6 @@ th.hide-for-touch {
 
 .whitefirst {
   background-color: white;
-}
-
-#secondmenu {
-}
-
-#secondmenu ul li{
-  padding-top: 4px;
 }
 
 #secondmenu ul li a{
