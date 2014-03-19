@@ -72,7 +72,8 @@ body {
   cursor: default; }
 
 a:hover {
-  cursor: pointer; }
+  cursor: pointer; 
+  color:red;}
 
 img,
 object,
@@ -3155,11 +3156,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: #008cba;
-  text-decoration: none;
+  color: #333333;
+  text-decoration: underline;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: red; }
   a img {
     border: none; }
 
@@ -6358,6 +6359,11 @@ th.hide-for-touch {
   text-decoration: underline;
   color: #333333;
   font-size: 10px;
+  line-height: 12px;
+}
+
+#firstband ul li a:hover {
+  color:red;
 }
 
 #firstband h3 {
@@ -6387,27 +6393,16 @@ th.hide-for-touch {
   font-weight: 600;
 }
 
-#notices-calendar {
-  
-}
-
 .mayor_welcome_head {
   font-size:14px;
   color: #9C3000;
   font-weight:bold;
+  line-height: 14px;
+  padding-left: 5px;
 }
 
-#footer {
-  background: #202226;
-  color: #e7e7e7;
-  padding-top: 6px;
-}
-
-#footer p {
+.footer_indent {
   font-size: 10px;
-  line-height: 11px;
-}
-
-#footer img {
-  padding-left: 8px;
+  line-height: 12px;
+  padding-left: 35px;
 }
