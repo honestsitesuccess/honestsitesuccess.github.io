@@ -2267,16 +2267,16 @@ html, body {
 .th {
   line-height: 0;
   display: inline-block;
-  border: solid 4px white;
-  max-width: 100%;
+  border: solid 2px #666666;
+  max-width: 14%;
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   -webkit-transition: all 200ms ease-out;
   -moz-transition: all 200ms ease-out;
   transition: all 200ms ease-out; }
   .th:hover, .th:focus {
-    -webkit-box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5);
-    box-shadow: 0 0 6px 1px rgba(0, 140, 186, 0.5); }
+    -webkit-box-shadow: 0 0 6px 1px rgba(153, 51, 0, 0.8);
+    box-shadow: 0 0 6px 1px rgba(153, 51, 0, 0.8); }
   .th.radius {
     -webkit-border-radius: 3px;
     border-radius: 3px; }
@@ -6315,7 +6315,6 @@ th.hide-for-touch {
 
 #top {
   padding-top: 2px;
-  height:100%;
 }
 
 #top h3 {
@@ -6327,7 +6326,7 @@ th.hide-for-touch {
 .bgimg {
   background-image:url(../images/town_of_silver_city_mast_1.jpg);
   background-repeat:no-repeat;
-  height:186px;
+  min-height:186px;
 }
 
 .nine_one_one {
@@ -6357,17 +6356,14 @@ th.hide-for-touch {
 
 #firstband {
   font-size: 11px;
-  line-height: 12px;
-}
+  line-height: 12px;}
 
 #firstband ul {
   line-height: 12px;
   font-style: underline;
-
 }
 
 #firstband ul li {
-  padding-left: 0.875rem;
   font-size: 10px;
 }
 
@@ -6390,6 +6386,10 @@ th.hide-for-touch {
 #firstband h2 {
   color: #9C3000;
   font-size: 14px;
+}
+
+.thumbs {
+  text-align: center;
 }
 
 .whitefirst {
