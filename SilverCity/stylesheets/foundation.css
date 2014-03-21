@@ -6324,9 +6324,9 @@ th.hide-for-touch {
 }
 
 .bgimg {
-  background-image:url(../images/town_of_silver_city_mast_1.jpg);
+  background-image:url(../images/mast1m.jpg);
   background-repeat:no-repeat;
-  min-height:182px;
+  min-height: 124px;
 }
 
 .nine_one_one {
